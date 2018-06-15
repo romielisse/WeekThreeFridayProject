@@ -2,3 +2,30 @@
 ======================================
 RESUME
 ======================================
+john smith
+jjsmith@gmail.com
+
+EDUCATION
+bs in psych,
+umd, 2002
+
+ms in softwarte,
+jhu, 2005
+
+
+EXPERIENCE
+developer
+amtrak, june 2015 - present
+- Duty 1, duty1
+- Duty 2, duty2
+
+jr developer
+amtrak, june 2014 - june 2015
+- Duty 1, duty3
+- Duty 2, duty4
+
+
+SKILLS
+
+perl, proficient
+ruby, familiar

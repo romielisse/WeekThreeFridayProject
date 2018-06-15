@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9e7e6b1-5fed-4e0b-9c01-6d3ca5abfa8b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Resume.txt" afterPath="$PROJECT_DIR$/Resume.txt" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,15 +18,15 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="33">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getPerson#0;class#Main#0" expanded="false" />
                 <element signature="method#getEducation#0;class#Main#0" expanded="false" />
                 <element signature="method#getJobs#0;class#Main#0" expanded="false" />
                 <element signature="method#getSkills#0;class#Main#0" expanded="false" />
                 <element signature="method#printResume#0;class#Main#0" expanded="false" />
-                <element signature="method#writeToFile#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -340,12 +340,12 @@
       <updated>1529067620142</updated>
       <workItem from="1529067623108" duration="11427000" />
       <workItem from="1529081829961" duration="5824000" />
-      <workItem from="1529090100496" duration="55000" />
+      <workItem from="1529090100496" duration="1220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17306000" />
+    <option name="totallyTimeSpent" value="18471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="944" y="10" width="974" height="1011" extended-state="0" />
@@ -359,7 +359,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31220657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31220657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -388,14 +388,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>299</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
@@ -407,11 +399,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getPerson#0;class#Main#0" expanded="false" />
             <element signature="method#getEducation#0;class#Main#0" expanded="false" />
             <element signature="method#getJobs#0;class#Main#0" expanded="false" />
             <element signature="method#getSkills#0;class#Main#0" expanded="false" />
             <element signature="method#printResume#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToFile#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -509,11 +501,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getPerson#0;class#Main#0" expanded="false" />
             <element signature="method#getEducation#0;class#Main#0" expanded="false" />
             <element signature="method#getJobs#0;class#Main#0" expanded="false" />
             <element signature="method#getSkills#0;class#Main#0" expanded="false" />
             <element signature="method#printResume#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToFile#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -696,20 +688,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="33">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getPerson#0;class#Main#0" expanded="false" />
             <element signature="method#getEducation#0;class#Main#0" expanded="false" />
             <element signature="method#getJobs#0;class#Main#0" expanded="false" />
             <element signature="method#getSkills#0;class#Main#0" expanded="false" />
             <element signature="method#printResume#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToFile#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -21,7 +21,7 @@ public class Main {
         getJobs();
         getSkills();
         printResume();
-        //writeToFile();
+        writeToFile();
     }
 
     protected static void getPerson(Person person){
@@ -297,39 +297,41 @@ public class Main {
             bw.write("RESUME");
             bw.write("\n======================================\n");
 
-            String s = person.name;
-            //bw.write(s);
-            //bw.write(person.name.toString() + "\n");
-            //bw.write(person.email.toString());
-            /*
-            bw.write("\nEDUCATION");
+            bw.write(person.name + "\n");
+            bw.write(person.email);
+            bw.newLine();
+
+            bw.write("\nEDUCATION\n");
             for (Education school : Schools) {
                 bw.write(school.type_of_degree + " in " + school.name_of_major + ",");
+                bw.newLine();
                 bw.write(school.school + ", " + school.year_graduated);
-                bw.write("\n");
+                bw.write("\n\n");
             }
 
-            bw.write("\nEXPERIENCE");
+            bw.write("\nEXPERIENCE\n");
             for (Job job : Jobs) {
                 bw.write(job.title);
+                bw.newLine();
                 bw.write(job.company + ", " + job.start_date + " - " + job.end_date);
 
                 // Reset counter
                 count = 1;
 
                 for (String s : job.Duties) {
+                    bw.newLine();
                     bw.write("- Duty " + count + ", " + s);
                     count++;
                 }
 
-                bw.write("\n");
+                bw.write("\n\n");
             }
 
-            bw.write("\nSKILLS");
+            bw.write("\nSKILLS\n");
             for (Skill skill : Skills) {
+                bw.newLine();
                 bw.write(skill.skill_desc + ", " + skill.skill_rating);
             }
-            */
 
             bw.close();
         }
