@@ -8,10 +8,13 @@ public class Main {
     static ArrayList<Education> Schools = new ArrayList<>();
     static ArrayList<Job> Jobs = new ArrayList<>();
     static ArrayList<Skill> Skills = new ArrayList<>();
+
     static Scanner sc = new Scanner(System.in);
     static boolean quit = false;
+
     //URL url = getClass().getResource("Resume.txt");
     //File file = new File(url.getPath());
+    // Declare new file to write to
     static File file = new File("C:\\Users\\GBTC440013UR\\IdeaProjects\\WeekThreeFridayProject\\Resume.txt");
 
     public static void main(String[] args) {
@@ -20,18 +23,26 @@ public class Main {
         getEducation();
         getJobs();
         getSkills();
+
+        // Prints resume to console
         printResume();
+
+        // Writes resume to file
         writeToFile();
     }
 
+    // getPerson()
+    // Get user's name and email
     protected static void getPerson(Person person){
         String name="", email="";
 
         System.out.println("This is a resume building app, please enter the information prompted for. Thank you.\n");
 
+        // Prompt user for name
         System.out.printf("Enter your name: ");
         name = sc.nextLine();
 
+        // Check to make sure input is not blank
         if (name.isEmpty()) {
             do {
                 System.out.printf("Name is blank, enter name: ");
@@ -39,6 +50,7 @@ public class Main {
             } while(name.isEmpty());
         }
 
+        // Set person's name
         person.setName(name);
 
         System.out.printf("Enter your email: ");
@@ -54,6 +66,9 @@ public class Main {
         person.setEmail(email);
     }
 
+    // getEducation()
+    // Get user's education info (degree, school and year commenced)
+    // Validates user input to make sure it's not blank
     protected static void getEducation() {
         String input = "";
         String degree = "", major = "", school = "", year = "";
@@ -116,9 +131,14 @@ public class Main {
         }while(quit == false);
     }
 
+    // getJobs()
+    // Get user's job experience (job title, company, dates of employment)
+    // Validates user input to make sure it's not blank
     protected static void getJobs() {
         String input = "";
         String title = "", company = "", start = "", end = "", duty = "";
+
+        // List holds list of job duties for each job held
         ArrayList<String> Duties = new ArrayList<>();
         quit = false;
 
@@ -205,6 +225,9 @@ public class Main {
         }while(quit == false);
     }
 
+    // getSkills()
+    // Get user's skills and their level of proficiency for each skill
+    // Validates user input to make sure it's not blank
     protected static void getSkills() {
         String input = "";
         String skillName = "", skillRate = "";
@@ -247,6 +270,8 @@ public class Main {
         }while(quit == false);
     }
 
+    // printResume()
+    // Prints user info to console
     protected static void printResume() {
 
         int count;
@@ -286,6 +311,8 @@ public class Main {
         }
     }
 
+    // writeToFile()
+    // Writes user info to file
     protected static void writeToFile() {
 
         try {

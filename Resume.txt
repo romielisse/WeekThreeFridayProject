@@ -9,7 +9,7 @@ EDUCATION
 bs in psych,
 umd, 2002
 
-ms in softwarte,
+ms in software,
 jhu, 2005
 
 
@@ -27,5 +27,6 @@ amtrak, june 2014 - june 2015
 
 SKILLS
 
-perl, proficient
-ruby, familiar
+perl, familiar
+php, highly skilled
+ruby, proficient
