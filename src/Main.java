@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -9,6 +10,9 @@ public class Main {
     static ArrayList<Skill> Skills = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
     static boolean quit = false;
+    //URL url = getClass().getResource("Resume.txt");
+    //File file = new File(url.getPath());
+    static File file = new File("C:\\Users\\GBTC440013UR\\IdeaProjects\\WeekThreeFridayProject\\Resume.txt");
 
     public static void main(String[] args) {
 
@@ -17,6 +21,7 @@ public class Main {
         getJobs();
         getSkills();
         printResume();
+        //writeToFile();
     }
 
     protected static void getPerson(Person person){
@@ -32,8 +37,9 @@ public class Main {
                 System.out.printf("Name is blank, enter name: ");
                 name = sc.nextLine();
             } while(name.isEmpty());
-            person.setName(name);
         }
+
+        person.setName(name);
 
         System.out.printf("Enter your email: ");
         email = sc.nextLine();
@@ -43,8 +49,9 @@ public class Main {
                 System.out.printf("Email is blank, enter email: ");
                 email = sc.nextLine();
             } while(email.isEmpty());
-            person.setEmail(email);
         }
+
+        person.setEmail(email);
     }
 
     protected static void getEducation() {
@@ -278,5 +285,62 @@ public class Main {
             System.out.println(skill.skill_desc + ", " + skill.skill_rating);
         }
     }
+
+    protected static void writeToFile() {
+
+        try {
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            int count;
+
+            bw.write("\n======================================\n");
+            bw.write("RESUME");
+            bw.write("\n======================================\n");
+
+            String s = person.name;
+            //bw.write(s);
+            //bw.write(person.name.toString() + "\n");
+            //bw.write(person.email.toString());
+            /*
+            bw.write("\nEDUCATION");
+            for (Education school : Schools) {
+                bw.write(school.type_of_degree + " in " + school.name_of_major + ",");
+                bw.write(school.school + ", " + school.year_graduated);
+                bw.write("\n");
+            }
+
+            bw.write("\nEXPERIENCE");
+            for (Job job : Jobs) {
+                bw.write(job.title);
+                bw.write(job.company + ", " + job.start_date + " - " + job.end_date);
+
+                // Reset counter
+                count = 1;
+
+                for (String s : job.Duties) {
+                    bw.write("- Duty " + count + ", " + s);
+                    count++;
+                }
+
+                bw.write("\n");
+            }
+
+            bw.write("\nSKILLS");
+            for (Skill skill : Skills) {
+                bw.write(skill.skill_desc + ", " + skill.skill_rating);
+            }
+            */
+
+            bw.close();
+        }
+        catch(IOException e) {
+            System.out.println("Error..");
+        }
+        finally {
+
+        }
+
+    }
+
 
 }
