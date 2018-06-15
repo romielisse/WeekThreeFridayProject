@@ -12,9 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //getPerson(person);
-        //getEducation();
-        //getJobs();
+        getPerson(person);
+        getEducation();
+        getJobs();
         getSkills();
         printResume();
     }
